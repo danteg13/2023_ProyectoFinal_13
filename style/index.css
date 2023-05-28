@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #ffdc00;
@@ -24,18 +27,17 @@ h1 {
 
 .contenedor-video-grande {
   width: 85%;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
 .video-container {
   width: 80%;
-  margin: 0 auto; /* Centra horizontalmente */
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
-
 
 .prev-arrow {
   position: absolute;
@@ -76,9 +78,9 @@ h1 {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 10px;
-  padding-left: 0px; /* Espacio para el prev-arrow y el next-arrow */
-  padding-right: 0px; /* Espacio para el prev-arrow y el next-arrow */
-  position: relative; /* Referencia para el posicionamiento de las flechas */
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
 }
 
 .prev-arrow {
@@ -88,7 +90,6 @@ h1 {
 .next-arrow {
   right: 0;
 }
-
 
 .video {
   text-align: center;
@@ -113,6 +114,7 @@ h1 {
 .video h2 {
   margin-top: 10px;
   font-size: 18px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .logo {
@@ -124,7 +126,7 @@ h1 {
 }
 
 .video-list {
-  overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+  overflow-x: hidden;
 }
 
 .video-wrapper {
@@ -141,4 +143,75 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* CONTENEDOR DEL MENU DE GENEROS */
+.genre-buttons {
+  margin-top: 20px;
+}
+
+.genre-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #2ecc40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.genre-button:hover {
+  background-color: #27ae30;
+}
+
+
+.genre-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+/* CONTENEDOR DE VIDEOS FILTRADOS */
+.genre-container {
+  margin-top: 20px;
+  border: 3px solid #2ecc40;
+  border-radius: 10px;
+  padding: 20px; 
+}
+
+.video-genre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.video-genre .video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; 
+}
+
+.video-genre h2 {
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  font-size: 18px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.video2 {
+  text-align: center;
+  flex: 0 0 auto;
+  width: 550px;
+  margin: 10px 20px 10px 20px;
+  border: 3px solid #2ecc40;
+  border-radius: 10px;
+  padding: 10px; 
 }
