@@ -3,14 +3,18 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffdc00;
+  background-color: white;
   color: #0e0d0d;
   text-align: center;
 }
 
 header {
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(#ffdd00, white);
+  margin-bottom: 50px;
 }
+
 
 h1 {
   font-size: 24px;
@@ -28,8 +32,15 @@ h1 {
 .contenedor-video-grande {
   width: 85%;
   margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 50px;
   overflow: hidden;
   position: relative;
+}
+
+.contenedor-video-grande h2 {
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .video-container {
@@ -120,7 +131,7 @@ h1 {
 .logo {
   display: block;
   margin: 0 auto;
-  max-width: 30%;
+  max-width: 20%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -173,7 +184,7 @@ h1 {
 /* CONTENEDOR DE VIDEOS FILTRADOS */
 .genre-container {
   margin-top: 20px;
-  border: 3px solid #2ecc40;
+  border: 0px solid #2ecc40;
   border-radius: 10px;
   padding: 20px; 
 }
