@@ -9,11 +9,13 @@ body {
 }
 
 header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 180px;
   background-image: linear-gradient(#ffdd00, white);
   margin-bottom: 50px;
+  margin-top: 50px;
 }
+
 
 
 h1 {
