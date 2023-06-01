@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrailerBR Registro</title>
+  
+  <link rel="stylesheet" type="text/css" href="style/form.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/png/logo-no-background.png" class="logo"/>
+   
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="text" id="fecha" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/aaaa" required>
+          </div>       
+          <div class="form-group">
+            <label for="correo">Correo Electronico</label>
+            <input type="text" id="correo"required>
+          </div>    
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Repetir Contraseña</label>
+              <input type="password" id="password" required>
+          </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="infoCheckbox" checked>
+              <label for="infoCheckbox">Deseo recibir información sobre nuevos trailers</label>
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="infoCheckbox" checked>
+              <label for="infoCheckbox">Declaro haber leído y acepto las condiciones
+                generales del programa y la normativa sobre protección de datos</label>
+            </div>
+        </form>
+    </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>

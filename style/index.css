@@ -3,7 +3,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #40957f;
+  background-color: #a7c686;
   color: #0e0d0d;
   text-align: center;
 }
@@ -11,7 +11,7 @@ body {
 header {
   padding-top: 30px;
   padding-bottom: 100px;
-  background-image: linear-gradient(#ffdd00, #fcee8c);
+  background-color: #ffdd00;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -38,8 +38,8 @@ h1 {
   margin-bottom: 50px;
   overflow: hidden;
   position: relative;
-  background-color: #fcee8c;
-  border-radius: 10px;
+  background-image: linear-gradient(#ffdd00, #a7c686);
+  
 }
 
 .contenedor-video-grande h2 {
@@ -192,7 +192,7 @@ h1 {
   border: 0px solid #40957f;
   border-radius: 10px;
   padding: 20px; 
-  background-color: #40957f;
+  background-color: #a7c686;
 }
 
 .video-genre {
@@ -228,7 +228,8 @@ h1 {
   flex: 0 0 auto;
   width: 550px;
   margin: 10px 20px 10px 20px;
-  border: 3px solid #2ecc40;
+  border: 3px solid #40957f;
   border-radius: 10px;
   padding: 10px; 
+  background-color: white;
 }
