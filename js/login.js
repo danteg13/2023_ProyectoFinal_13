@@ -1,5 +1,3 @@
-
-
 // Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAn5ft3WQReuUxd8-TYOCxhzGnEc11IFSw",
@@ -10,7 +8,7 @@ const firebaseConfig = {
   appId: "1:41682364242:web:434555c8df0a82b4febc8b",
   measurementId: "G-7G5WEN38LT"
 };
-
+    
 // Inicializar la app de Firebase
 firebase.initializeApp(firebaseConfig);
 
