@@ -41,3 +41,6 @@ En Trailer Brasil, valoramos tus contribuciones y retroalimentación. Si conoces
 
 Atentamente,
 El equipo de Trailer Brasil
+
+
+ENLACE TABLERO TRELLO: https://trello.com/b/qQLgphe5/paginaweb
