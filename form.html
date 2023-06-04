@@ -8,7 +8,30 @@
     <link rel="stylesheet" type="text/css" href="style/form.css">
 </head>
 <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAn5ft3WQReuUxd8-TYOCxhzGnEc11IFSw",
+      authDomain: "trailerbrasil-ff859.firebaseapp.com",
+      projectId: "trailerbrasil-ff859",
+      storageBucket: "trailerbrasil-ff859.appspot.com",
+      messagingSenderId: "41682364242",
+      appId: "1:41682364242:web:434555c8df0a82b4febc8b",
+      measurementId: "G-7G5WEN38LT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  </script>
     <div class="container">
         <img src="img/png/logo-no-background.png" class="logo"/>
    
@@ -48,62 +71,8 @@
 
     <!-- Agrega los scripts de Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
     <script src="js/form.js" type="module"></script>
-
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
-
-
-      // Inicializar Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-      const auth = getAuth(app);
-
-      // Obtener referencia al formulario de registro
-      const registerForm = document.getElementById("registerForm");
-
-      // Manejar el evento de envío del formulario
-      registerForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        // Obtener los valores de los campos del formulario
-        const username = document.getElementById("username").value;
-        const nombre = document.getElementById("nombre").value;
-        const correo = document.getElementById("correo").value;
-        const password = document.getElementById("password").value;
-        const confirmPassword = document.getElementById("confirmPassword").value;
-
-        // Validar que todos los campos estén completos
-        if (username === '' || nombre === '' || correo === '' || password === '' || confirmPassword === '') {
-          alert("Por favor, complete todos los campos.");
-          return;
-        }
-
-        // Validar que las contraseñas coincidan
-        if (password !== confirmPassword) {
-          alert("Las contraseñas no coinciden. Por favor, inténtelo de nuevo.");
-          return;
-        }
-
-        // Registrar al usuario en Firebase
-        register(correo, password);
-      });
-
-      // Función para registrar al usuario en Firebase
-      async function register(email, password) {
-        try {
-          const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-          console.log("Usuario registrado: ", userCredential.user);
-          alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
-        } catch (e) {
-          console.error("Error registrando al usuario: ", e);
-        }
-      }
-    </script>
 
 </body>
 </html>
